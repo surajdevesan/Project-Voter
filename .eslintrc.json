@@ -21,6 +21,7 @@
     ],
     "parser": "babel-eslint",
     "rules":  {
+    "strict": ["error", "global"],        
     "indent": [
       "error",
       2, {
@@ -42,7 +43,8 @@
     "quotes": [
       "error",
       "single",
-      {"avoidEscape": true}
+      {"avoidEscape": true},
+      { "allowTemplateLiterals": true }
     ],
     "semi": [
       "error",
@@ -58,6 +60,7 @@
         "asyncArrow": "always"
       }
     ],
+    "arrow-parens": ["error", "always"],
     "no-var": [
       "error"
     ],
@@ -100,6 +103,19 @@
     ],
     "space-before-blocks": [
       "error"
+    ],
+    "camelcase": "error",
+    "no-tabs": "error",
+    "eqeqeq": ["error", "smart"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "object-curly-spacing": ["error", "never",
+        { "arraysInObjects": false },
+        { "objectsInObjects": false }
+    ],
+    "array-bracket-spacing": ["error", "always",
+        { "singleValue": false },
+        { "arraysInArrays": false },
+        { "objectsInArrays": false }
     ]
   }
 }
