@@ -1,0 +1,118 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    },
+    "plugins":  [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules":  {
+    "strict": ["error", "global"],        
+    "indent": [
+      "error",
+      2, {
+        "FunctionDeclaration": {"body": 1, "parameters": 2},
+        "FunctionExpression": {"body": 1, "parameters": 2},
+        "CallExpression": {"arguments": 1},
+        "MemberExpression": 1,
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {"avoidEscape": true}
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "space-before-function-paren": [
+      "error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "arrow-parens": ["error", "always"],
+    "no-var": [
+      "error"
+    ],
+    "prefer-const": [
+      "error"
+    ],
+    "no-multiple-empty-lines": [
+      "error"
+    ],
+    "eol-last": [
+        "error",
+        "always"
+    ],
+    "max-len": [
+      "error",
+      82
+    ],
+    "comma-spacing": [
+      "error",
+      {"before": false, "after": true}
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-console": [
+      "error",
+      {"allow": ["warn", "error"]}
+    ],
+    "curly": [
+      "error"
+    ],
+    "no-unused-vars": [
+      "error",
+      {"argsIgnorePattern": "^__"}
+    ],
+    "keyword-spacing": [
+      "error",
+      {"before": true,"after": true}
+    ],
+    "space-before-blocks": [
+      "error"
+    ],
+    "camelcase": "error",
+    "no-tabs": "error",
+    "eqeqeq": ["error", "smart"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "object-curly-spacing": ["error", "never",
+        { "objectsInObjects": false }
+    ],
+    "array-bracket-spacing": ["error", "always",
+        { "objectsInArrays": false }
+    ],
+    "space-infix-ops": "error"
+  }
+}
