@@ -112,6 +112,7 @@
     ],
     "array-bracket-spacing": ["error", "always",
         { "objectsInArrays": false }
-    ]
+    ],
+    "space-infix-ops": "error"
   }
 }
