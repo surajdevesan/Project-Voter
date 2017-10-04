@@ -22,7 +22,7 @@
 └── package.json
 ```
 
-##To run the code : 
+## To run the code : 
 execute the following commands in order
 
 1 ```npm install```
