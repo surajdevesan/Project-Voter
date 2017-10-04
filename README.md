@@ -26,5 +26,7 @@
 execute the following commands in order
 
 1 ```npm install```
+
 2 ```npm run build```
+
 3 ```npm start```
