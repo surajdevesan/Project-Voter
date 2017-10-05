@@ -46,7 +46,7 @@ class CreateNewPoll extends Component {
         <div>
           <RaisedButton
             backgroundColor="#a4c639"
-            icon={<ActionAndroid color={fullWhite} style={{ 'margin-top': 6 }} />}
+            icon={<ActionAndroid color={fullWhite} style={{ marginTop: 6 }} />}
             style={style}
             onClick={this.handleOpen}
           />

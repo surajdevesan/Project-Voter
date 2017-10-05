@@ -8,7 +8,5 @@ ReactDOM.render((
         <div>
             <Route exact path="/" component={CreateNewPoll} />
         </div>
-    </Router>
-), document.getElementById('app')
+    </Router>), document.getElementById('app')
 );
-
