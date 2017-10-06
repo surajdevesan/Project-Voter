@@ -16,12 +16,25 @@ var config = {
       {
         test: /\.jsx?/,
         include: APP_DIR,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            ['import', { libraryName: "antd", style: true }]
+          ]
+        }        
       },
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader')
-      }
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader',
+      },
+      {
+        test: /\.(png|jpg|)$/,
+        loader: 'url-loader?limit=200000'
+      }         
     ]
   },
   plugins: [

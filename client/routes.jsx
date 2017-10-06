@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import CreateNewPoll from './components/CreateNewPoll'
+import PollingPage from './components/PollingPage/PollingPage.js'
 
 ReactDOM.render((
     <Router>
         <div>
-            <Route exact path="/" component={CreateNewPoll} />
+            <Route exact path="/" component={PollingPage} />
         </div>
     </Router>), document.getElementById('app')
 );

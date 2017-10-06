@@ -25,6 +25,6 @@
 ## To run the code 
 Execute the following commands in order
 
-```npm install```
+```$ npm install```
 
-```npm start```
+```$ npm start```
