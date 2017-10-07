@@ -15,7 +15,7 @@ io.on('connection', function(client){
   client.on('subscribeToTimer', (interval) => {
     console.log('client is subscribing to timer with interval ', interval);
     // setInterval(() => {
-      client.emit('timer', 'Hello world');
+      client.emit('message', 'Hello world');
     // }, interval);
   });
 });

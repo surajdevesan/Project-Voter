@@ -2,10 +2,14 @@ import {List, ListItem} from 'material-ui/List';
 import React from 'react';
 import chatListClass from './chatList.scss';
 import ReactMarkdown from 'react-markdown';
-
+import openSocket from '../utils/socketConnection';
 const ChatListComponenet = () => {
+  let input = "Hey";
+  let socket = openSocket.getSocket();
+  socket.on('message', (message) => {
+    console.log('@Message recieved', message);
+  });
   return(
-   
     <List className='flex-direction'>
       <ListItem
       primaryText="Suraj"
