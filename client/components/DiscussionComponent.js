@@ -30,18 +30,17 @@ export default class Discussion extends React.Component {
     console.log('#render', this.state.open);
     return (
       <div >
-        <ProjectDetails click = {this.buttonClick.bind(this)}/>
+        <ProjectDetails />
         <Divider />
         <div className='display'>
         <ChatList />
-        <NotificationDetails open={this.state.open} 
-        click = {this.buttonClick.bind(this)} />
+        {/* <NotificationDetails  />
         <Divider />
-        {/* <PostChat /> */}
-        {/* <RaisedButton
+        <PostChat /> 
+         <RaisedButton
           onClick={this.buttonClick}
-          label="Default" style={style} /> */}
-        <ChatMessage />
+          label="Default" style={style} /> 
+        <ChatMessage /> */}
         </div>
       </div>
     );

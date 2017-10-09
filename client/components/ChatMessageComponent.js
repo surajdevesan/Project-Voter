@@ -9,7 +9,11 @@ import opensocket from '../utils/socketConnection';
 const sendMessage = () => {
   let message="Test Messages";
   const socket = opensocket.getSocket();
-  socket.emit('subscribeToTimer', 1000);
+  let messageObj = {
+    'sender': 'Suraj',
+    'message': "Hello world"
+  };
+  socket.emit('subscribeToTimer', messageObj);
 };
 const ChatMessage = () => {
   return (
