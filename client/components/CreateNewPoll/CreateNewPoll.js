@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Modal, Button, Icon, Input } from 'antd';
+const { TextArea } = Input;
 
 const style = {
   pollIcon: {
@@ -58,13 +59,15 @@ class CreateNewPoll extends Component {
           ]}
         >
         <Input placeholder="Project Title" style={style.inputBox}/>
-        <Input placeholder="Description" style={style.inputBox}/>
+        <TextArea placeholder="Description" autosize={{ minRows: 2, maxRows: 6 }} style={style.inputBox}/>
+        <TextArea placeholder="Technologies" autosize={{ minRows: 2, maxRows: 6 }} style={style.inputBox}/>
+        <Input placeholder="Estimated Time Period" style={style.inputBox}/>
         </Modal>
       </div>
     )
   }
 }
-//hi my name i  a askjndasascff fidkjnadj dfdjnajdf dkjnadkjd jsdfhjhfofofjsisfijfifjfpiji
+
 CreateNewPoll.propTypes = {};
 
 export default CreateNewPoll;

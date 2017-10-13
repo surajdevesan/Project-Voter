@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import TrelloImg from '../../../public/images/trello_sample.png';
+import PollCards from '../PollCards/PollCards.js';
+import { Card, Col, Row } from 'antd';
+
 const style = {
   pollOptions: {
     marginTop: '10%'
@@ -15,10 +17,15 @@ class PollOptions extends Component {
   render() {
 
     return (
-        <div style={style.pollOptions}>
-            {/* Here we have the cards for polling.*/}
-            <img src={TrelloImg} />
-        </div>
+      <div style={{ background: '#ECECEC', padding: '30px' }}>
+        <Row>
+          <Col span={24}>
+            <Card title="Project Voter" bordered={false}>
+              <PollCards />
+            </Card>
+          </Col>
+        </Row>
+      </div>        
 
     )
   }
