@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectDetails from './ProjectDetailsComponent';
-import ChatList from './ChatListComponent';
+import ChatList from '../containers/ChatListContainer';
 import RaisedButton from 'material-ui/RaisedButton';
 import PostChat from '../containers/PostChatContainer';
 import Divider from 'material-ui/Divider';

@@ -3,7 +3,7 @@ import React from 'react';
 import chatListClass from './chatList.scss';
 import ReactMarkdown from 'react-markdown';
 import openSocket from '../utils/socketConnection';
-const ChatListComponenet = () => {
+const ChatListComponenet = ({chatList, onChatClick}) => {
   let input = "Hey";
   let socket = openSocket.getSocket();
   socket.on('message', (message) => {
@@ -12,6 +12,7 @@ const ChatListComponenet = () => {
   return(
     <List className='flex-direction'>
       <ListItem
+      onClick = {onChatClick}
       primaryText="Suraj"
           secondaryText={
             <ReactMarkdown
